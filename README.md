@@ -1,8 +1,7 @@
-# CSE-205-Projects
-What has been created throughout the class CSE-205
+#CSE-205 Projects
 
-The Home that has been done so far is not yet in the repository, but I have uploaded the code for our first project. 
+This contains the Java programs I have created throughout my courses. 
 
-Project1 (Main copy2.java)is reads integers from a txt file and places them in an ArrayList. That list is then searched for monotonically 
-increasing/decreasing increments. Each run of count k is then placed in a new ArrayList. FInally the total amount of up/down 
-runs are added and displayed into a new txt file. 
+The homework files include mostly one dimentional programs, while the project files are more dynamic and have multiple methods and classes within each program. 
+
+Copy/paste the code into your favorite IDE and run/compile them to see the results. I will upload the relevant txt files for each in the near future. 
