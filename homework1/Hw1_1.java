@@ -8,11 +8,3 @@ public class Hw1_1 {
     public Hw1_1(){    
     }
 }
-
-
-
-
-
-
-
-//             /Users/zac/Desktop/netBeans/Assignment1

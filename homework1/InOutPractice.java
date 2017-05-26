@@ -45,19 +45,19 @@ public class InOutPractice {
             output.println("Zac Orr");
             output.println(28);        
             output.close();//must include this to close the txt file. 
-       } catch (IOException ex) {
+        } catch (IOException ex) {
             System.out.printf("Error: %s\n", ex);
-       }
+        }
        
 // this code reads from the file and prints to the console.    
        try{
-       Scanner input = new Scanner(file1);
-       String name = input.nextLine();
-       int age = input.nextInt();
-        System.out.printf("Name: %s Age %d\n", name, age);
-        //to read this file, go to the preferences ,of this package, copy the location text, then paste the location into the desktop finder and open the txt file! 
+            Scanner input = new Scanner(file1);
+            String name = input.nextLine();
+            int age = input.nextInt();
+            System.out.printf("Name: %s Age %d\n", name, age);
+             //to read this file, go to the preferences ,of this package, copy the location text, then paste the location into the desktop finder and open the txt file! 
        } catch (FileNotFoundException ex){
-           System.out.printf("Error: %s\n", ex);
+            System.out.printf("Error: %s\n", ex);
        }
        
 //if we commented out all of the writing code from this class, we can manually change the text in the txt file and it will print what is now in the txt file!!!! 

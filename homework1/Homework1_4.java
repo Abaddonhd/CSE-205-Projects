@@ -13,11 +13,11 @@ public class Homework1_4 {
       //Scanner scanner = new Scanner(new File(fName));
       //output for the File that does not exist is Exception in thread "main" java.io.FileNotFoundException: input.txt (No such file or directory)
       //at java.io.FileInputStream.open0(Native Method)
-        //	at java.io.FileInputStream.open(FileInputStream.java:195)
-        //	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-        //	at java.util.Scanner.<init>(Scanner.java:611)
-        //	at week1.Homework1_4.main(Homework1_4.java:18)
-        ///Users/zac/Library/Caches/NetBeans/8.2/executor-snippets/run.xml:53: Java returned: 1
+      //at java.io.FileInputStream.open(FileInputStream.java:195)
+      //at java.io.FileInputStream.<init>(FileInputStream.java:138)
+      //at java.util.Scanner.<init>(Scanner.java:611)
+      //at week1.Homework1_4.main(Homework1_4.java:18)
+      ///Users/zac/Library/Caches/NetBeans/8.2/executor-snippets/run.xml:53: Java returned: 1
       //BUILD FAILED (total time: 0 seconds)
       
 //4.2

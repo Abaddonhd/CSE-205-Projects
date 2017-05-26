@@ -19,21 +19,21 @@ public class Homework1_5 {
     //  Declaring two int's, setting one equal to 0, and then dividing by that int will throw an unchecked exception. 
     
     //5.4 Which type of uncaught exception must be declared with the throws reserve word in a method header?
-    //      FileNotFoundException, like we have been using in the current homework answers, must be declared with the throws reserve word. 
+    //  FileNotFoundException, like we have been using in the current homework answers, must be declared with the throws reserve word. 
     
     //5.5 Why is an IndexOutOfBoundsException not required when declaring a method? 
-    //      The exception will thrown regardless when ran since the program had an error, a call to print a integer from an array at location 10 when it only has 9.
+    //  The exception will thrown regardless when ran since the program had an error, a call to print a integer from an array at location 10 when it only has 9.
     
     //5.6 Is the type of exception object always the same as the type declared in the catch clasue that catches it? If not, why?
-    //      No. One exception can occur that triggers another that may be in the catch clasue. Often times exceptions are thrown in a series of events that 
-    //      triggers another 
+    //  No. One exception can occur that triggers another that may be in the catch clasue. Often times exceptions are thrown in a series of events that 
+    //  triggers another 
     
     //5.7 What is the finally clause. Give an example. 
-    //      This is what occurs post catch clause. It always executes when the try block exists. Using this finally clause will ensure that a resourse is 
-    //      recovered. After closing a PrintWriter, input a finally clause to notify if it is already closed, or is being closed now. Just a second check on resources. 
+    //  This is what occurs post catch clause. It always executes when the try block exists. Using this finally clause will ensure that a resourse is 
+    //  recovered. After closing a PrintWriter, input a finally clause to notify if it is already closed, or is being closed now. Just a second check on resources. 
     
     //5.8 Which exception does the next() and nextInt() of the Scanner class throw? Checked or unchecked? 
-    //      The process for a next() or nextInt() can be a checked exception, followed by an unchecked RuntimeException. Legally the 
-    //      code will compile, but once it realizes that there is nothing next to scan, it will throw the Runtime. 
+    //  The process for a next() or nextInt() can be a checked exception, followed by an unchecked RuntimeException. Legally the 
+    //  code will compile, but once it realizes that there is nothing next to scan, it will throw the Runtime. 
 }
 

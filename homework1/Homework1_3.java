@@ -17,16 +17,16 @@ public class Homework1_3 {
         Scanner input = new Scanner(System.in);
                
         int[] array1 = {0,1,2,3,4,0,1,2,3,4};
-        int total1 = array1.length;
-        int total = total1;
+        int t = array1.length;
         
-        for (int i = 0; i < total1; i++) {
+        
+        for (int i = 0; i < t; i++) {
             list.add(array1[i]);
         }
         
         System.out.println("The size of the ArrayList<> named list is: " + list.size());
         
-        for (int i = 0; i < total; i++) {
+        for (int i = 0; i < t; i++) {
             System.out.print(list.get(i) + ", ");
         }
         System.out.println("\n");   
@@ -36,7 +36,7 @@ public class Homework1_3 {
         }
         
 //3.2             
-        for (int i = 0; i < total; i++) {
+        for (int i = 0; i < t; i++) {
             System.out.print(list.get(i) + ", ");
         }
         System.out.println("\n"); // prints 0, 1, 3, 6, 10, 10, 11, 13, 16, 20, 
@@ -53,7 +53,7 @@ public class Homework1_3 {
         }
         System.out.println("The count of negative integers is " + countNeg); // this print The count of negative integers is 0
       
-      //calling method arrayListSum()
+        //calling method arrayListSum()
         new Homework1_3().arrayListSum(list);
         ArrayList<Integer> l = new ArrayList<>();
         l.add(3);
@@ -61,32 +61,32 @@ public class Homework1_3 {
         l.add(5);
         System.out.println(arrayListSum(l));
         
-      //calling method arrayListCreate()
-        new Homework1_3().arrayListCreate(total, 0);
+        //calling method arrayListCreate()
+        new Homework1_3().arrayListCreate(t, 0);
         
-      //calling method insertName()
+        //calling method insertName()
         ArrayList<String> list2 = new ArrayList<>();
         new Homework1_3().insertName(list2 , "John");
         System.out.println(list2.get(0));
         
-      //calling arrayListRemove()
-      int r = 10;    
-      int count = 0;             
-      for (int i = 0; i < list.size(); i++) {
-            if(list.get(i) == r){               
-                 count++;
-             }            
-      }   
-        System.out.println("The number of integers to be removed from the list is " + count);       
-     
-      for (int i = 0; i < list.size(); i++) {
-           new Homework1_3().arrayListRemove(list, r);             
-      }         
-      
-      for (int i = 0; i < list.size(); i++) {
-          System.out.print(list.get(i) + ", ");
-      }
-        System.out.println("\n");
+        //calling arrayListRemove()
+        int r = 10;    
+        int count = 0;             
+        for (int i = 0; i < list.size(); i++) {
+              if(list.get(i) == r){               
+                   count++;
+               }            
+        }   
+          System.out.println("The number of integers to be removed from the list is " + count);       
+
+        for (int i = 0; i < list.size(); i++) {
+             new Homework1_3().arrayListRemove(list, r);             
+        }         
+
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i) + ", ");
+        }
+          System.out.println("\n");
 //This prints The number of integers to be removed from the list is 2
 //0, 1, 3, 6, 11, 13, 16, 20,     
     } 

@@ -3,17 +3,17 @@ package week1;
 public class Homework1_6 {
 //    6.1 Explain how an instance method differs from a class method (static method).
 //    Instance methods are invoked when being used on an object. Class methods are used when not invoked on an object. Example: a Math.sqrt(num) 
-//            is a static method called to take the square root of a number. A instance method would be called when using Input/Output. 
+//    is a static method called to take the square root of a number. A instance method would be called when using Input/Output. 
     
 //    6.2 Explain what happens if we write a class named C but do not implement any constructors in C.
-//        If a class C is created but no constructors are implemented, a constructor with no arguments is generated. Every class will 
-//        have one constructor, it will just be program generated and have a null value. 
+//    If a class C is created but no constructors are implemented, a constructor with no arguments is generated. Every class will 
+//    have one constructor, it will just be program generated and have a null value. 
     
 //    6.3 (a) In a static (class) method, it is easy to differentiate between calls to instance methods and calls to static methods. How do
 //    you tell them apart? (b) Why is it not as easy for methods that are called from an instance method? 
-//        The difference between calling a instance and static method is defined by the name of the call. Calls to a static method will  
-//        be used on primitive datas types. Instance methods will be called on objects. Instance methods can be called and used to evaluate an action
-//        and that action might be using primitive data types, so the differentiation is less defined. 
+//    The difference between calling a instance and static method is defined by the name of the call. Calls to a static method will  
+//    be used on primitive datas types. Instance methods will be called on objects. Instance methods can be called and used to evaluate an action
+//    and that action might be using primitive data types, so the differentiation is less defined. 
     
 //    6.4 Explain what happens when this application runs and why.
 //    public class C {
@@ -27,9 +27,9 @@ public class Homework1_6 {
 //    System.out.println("x = " + x);
 //    }
 //    }
-//        This throws the program a NullPointerException. The method C() is called, and x refers to the length of String s, but the String s 
-//        is never given a value. To fix the issue, one could set values to x and s inside the parameters of the method and include 
-//        them when it is called in the main method. 
+//    This throws the program a NullPointerException. The method C() is called, and x refers to the length of String s, but the String s 
+//    is never given a value. To fix the issue, one could set values to x and s inside the parameters of the method and include 
+//    them when it is called in the main method. 
     
 //    6.5 Write the declaration for a class named C that declares: (1) a private int instance variable named mX; (2) a private int
 //    class variable named mY initialized to 0; (3) a private int class constant named A which is equivalent to 100; (4) a
