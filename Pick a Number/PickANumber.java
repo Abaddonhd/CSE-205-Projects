@@ -84,8 +84,31 @@ public class PickANumber{
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setVisible(true);
             
-        theChoice choice = new theChoice();
-          item4.addActionListener(choice);
+        item4.addActionListener(
+                new ActionListener(){
+                    public void actionPerformed(ActionEvent pEvent){
+                        BinarySearchTrial bnt = new BinarySearchTrial();
+                        ArrayList<Integer> a = new ArrayList<>();
+                        a.add(1); 
+                        a.add(2); 
+                        a.add(3); 
+                        a.add(4); 
+                        a.add(6); 
+                        a.add(7);
+                        a.add(11);
+                        a.add(14);
+                        a.add(16);
+                        a.add(18);         
+                        if(pEvent.getSource() == item4){
+                        int input = Integer.parseInt(item3.getText());            
+                        JOptionPane.showMessageDialog(null,bnt.recursiveBinarySearch(a, input, 0, a.size()-1));
+                    }
+                }
+            }
+        );       
+        //This code would be used if we didnt wanr to create an anonymous class like above
+            //theChoice choice = new theChoice();
+            //item4.addActionListener(choice);
     }
 
     private JButton newButton(String pName, int pWidth, int pHeight) {
@@ -94,9 +117,11 @@ public class PickANumber{
      return button;
     }
   //---------------------------------------------------------------              
-     public class theChoice implements ActionListener{
+  //actionPerformed method, only used if not using the anoymyous class above.  
+    public class theChoice implements ActionListener{
          
-         //actionPerformed method
+         
+
          public void actionPerformed(ActionEvent event){
                     
             BinarySearchTrial bnt = new BinarySearchTrial();
