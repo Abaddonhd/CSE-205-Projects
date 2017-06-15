@@ -1,16 +1,20 @@
 package games;
 
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
+import javax.swing.Box;
 import javax.swing.BoxLayout;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JOptionPane;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import searchAlgorithms.BinarySearchTrial;
 /**
  *This is a compilation of the GUI and recursion lessons creating a game where a user chooses a number between 0 and 20
@@ -23,6 +27,7 @@ public class PickANumber{
     private JLabel item1;
     private JLabel item2;
     private JTextField item3;
+    private JButton item4;
     
     public static void main(String[] args) {
         new PickANumber().run();
@@ -35,12 +40,14 @@ public class PickANumber{
         //set values to given instance variables       
         item1 = new JLabel("I have a list of 10 random numbers less than 20");       
         item2 = new JLabel("Type your guess, then press enter!");
+        item1.setHorizontalAlignment(SwingConstants.CENTER);
+        item2.setHorizontalAlignment(SwingConstants.CENTER);
         
         //create a JPanel for the JLabels
         JPanel panelLabel = new JPanel();
             panelLabel.setLayout(new GridLayout(2,1,0,10));
             panelLabel.add(item1);
-            panelLabel.add(item2);
+            panelLabel.add(item2);            
          
         //create the JTextField
         item3 = new JTextField(3);
@@ -50,11 +57,20 @@ public class PickANumber{
             panelText.setLayout(new GridLayout(1,1,0,0));
             panelText.add(item3);
             
+        //create item4 button using the newButton method below
+        item4 = newButton("Submit", 90, 30);
+        
+        //add a panel for the button
+        JPanel butPanel = new JPanel();
+            butPanel.add(Box.createVerticalGlue());
+            butPanel.add(item4);
+            
         //create a panel to hold the panels for text and label
         JPanel mainPanel = new JPanel();
             mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
             mainPanel.add(panelLabel);
             mainPanel.add(panelText);
+            mainPanel.add(butPanel);
             
         //create another panel using the mainPanel centered
         JPanel finalPanel = new JPanel();
@@ -69,7 +85,13 @@ public class PickANumber{
             frame.setVisible(true);
             
         theChoice choice = new theChoice();
-          item3.addActionListener(choice);
+          item4.addActionListener(choice);
+    }
+
+    private JButton newButton(String pName, int pWidth, int pHeight) {
+        JButton button = new JButton(pName);
+        button.setPreferredSize(new Dimension(pWidth, pHeight));
+     return button;
     }
   //---------------------------------------------------------------              
      public class theChoice implements ActionListener{
@@ -89,8 +111,8 @@ public class PickANumber{
             a.add(14);
             a.add(16);
             a.add(18);         
-            if(event.getSource() == item3){
-                int input = Integer.parseInt(event.getActionCommand());            
+            if(event.getSource() == item4){
+                int input = Integer.parseInt(item3.getText());            
                 JOptionPane.showMessageDialog(null,bnt.recursiveBinarySearch(a, input, 0, a.size()-1));
             }                     
          }
